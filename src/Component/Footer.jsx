@@ -4,7 +4,7 @@ import "../Css/Footer.css";
 export default function Footer() {
   return (
     <>
-      <div className=" footer fixed-bottom  d-flex flex-column flex-flex-wrap">
+      <div className=" footer   d-flex flex-column flex-flex-wrap">
         <div className="  container d-flex justify-content-between text-center py-3">
           <div className="location d-flex flex-column">
             <h2>Location</h2>

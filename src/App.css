@@ -1,19 +1,68 @@
-*{margin:0;padding:0;box-sizing:border-box}
-body{color:#fff;overflow:auto;}
-  /* !==============>>>> Generic css <<<======================  */
-.main{margin-top:100px;padding-top:30px;height:100vh}
-.mainbg-background{background-color:#1abc9c}
-.star{color:#fff;padding-inline:9px}
-.beforestar{width:150px;height:6px;background-color:#fff}
-.afterstar{width:150px;height:6px;background-color:#fff}
-  /* !==============>>>> End of Generic css <<<===============  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  overflow: auto;
+}
+/* !==============>>>> Generic css <<<======================  */
+.main {
+  margin-top: 100px;
+  padding-top: 30px;
+  height: 100vh;
+}
+.mainbg-background {
+  background-color: #1abc9c;
+}
+.star {
+  color: #fff;
+  padding-inline: 9px;
+}
+.beforestar {
+  width: 150px;
+  height: 6px;
+  background-color: #fff;
+}
+.afterstar {
+  width: 150px;
+  height: 6px;
+  background-color: #fff;
+}
+/* !==============>>>> End of Generic css <<<===============  */
 /* ~==============>>>> Navbar css <<<========================= */
-.navbar{background-color:#2c3e50!important}
+.navbar {
+  background-color: #2c3e50 !important;
+}
 /* ~==============>>>> End of Navbar css <<<=============== */
- /* ?===========>>>>>Home <<<<<<<=========================== */
-.details{margin-top:10px;color:#fff}
- /* ?===========>>>>>End of Home <<<<<<<===================== */
+/* ?===========>>>>>Home <<<<<<<=========================== */
+.details {
+  margin-top: 10px;
+  color: #fff;
+}
+/* ?===========>>>>>End of Home <<<<<<<===================== */
 
- /* *================>>>>>portfolio <<<<<====================== */
- .portfolio img{cursor: pointer;}
- /* *================>>>>>end of portfolio <<<<<================ */
+/* *================>>>>>portfolio <<<<<====================== */
+.portfolio,
+.portfolio .star {
+  color: #2c3e50 !important;
+  font-weight: bold;
+}
+.portfolio .beforestar,
+.portfolio .afterstar {
+  background-color: #2c3e50 !important;
+}
+.portfolio img {
+  cursor: pointer;
+}
+.portfolio img {
+  position: relative;
+}
+.portfolio img:hover {
+  background-color: #1abc9c !important;
+  content: "+";
+ z-index: 100;
+  
+}
+/* *================>>>>>end of portfolio <<<<<================ */
