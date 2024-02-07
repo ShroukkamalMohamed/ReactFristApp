@@ -4,7 +4,7 @@ export default function Home() {
     <>
       <div className="main home text-center mainbg-background">
         <img
-          src={require("../assest/avataaars.svg").default}
+          src={require("../../assest/avataaars.svg").default}
           className="w-100 h-25 "
           alt=""
         />
