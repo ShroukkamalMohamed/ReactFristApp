@@ -1,15 +1,14 @@
 import React from "react";
 import "../../Css/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 export default function Navbra() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div className="container p-3">
-          <Link className="nav-link" to="/Home">
-            <span>START FRAMEWORK </span>
+      <nav className="navbar navbar-expand-lg p-4 fixed-top z-3">
+        <div className="container">
+          <Link className="navbar-brand text-uppercase fw-bold fs-4" to="/">
+            START FRAMEWORK
           </Link>
-
           <button
             className="navbar-toggler"
             type="button"
@@ -19,24 +18,36 @@ export default function Navbra() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-5 ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="/About">
+            <ul className="navbar-nav ms-auto   ">
+              <li className="nav-item  ">
+                <NavLink
+                  to="/about"
+                  activeClassName="active"
+                  className="nav-link "
+                >
                   About
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/portfolio">
+              <li className="nav-item  ">
+                <NavLink
+                  to="/portfolio"
+                  activeClassName="active"
+                  className="nav-link "
+                >
                   Portfolio
-                </Link>
+                </NavLink>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+              <li className="nav-item  ">
+                <NavLink
+                  to="/contact"
+                  activeClassName="active"
+                  className="nav-link "
+                >
                   Contact
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

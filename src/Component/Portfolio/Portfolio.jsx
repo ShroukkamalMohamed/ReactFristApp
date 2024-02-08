@@ -3,6 +3,7 @@ import { Modal } from "react-bootstrap";
 import pic1 from "../../assest/poert1.png";
 import pic2 from "../../assest/port2.png";
 import pic3 from "../../assest/port3.png";
+import { useEffect } from "react";
 export default function Portfolio() {
   const [imageName, setImageName] = useState("");
   const [showModal, setShowModal] = useState(false);
@@ -11,6 +12,10 @@ export default function Portfolio() {
     setShowModal(true);
   }
   const allimages = [pic1, pic2, pic3, pic2, pic3, pic1];
+  useEffect(() => {
+    document.title = "Portfolio";
+  }, []);
+
   return (
     <>
       <div className="main portfolio">

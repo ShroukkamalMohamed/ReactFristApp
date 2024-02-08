@@ -1,8 +1,13 @@
 import React from "react";
+import { useEffect } from "react";
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
   return (
     <>
-      <div className="main home text-center mainbg-background">
+      <div className="main home text-center mainbg-background d-flex justify-content-center align-items-center flex-column">
         <img
           src={require("../../assest/avataaars.svg").default}
           className="w-100 h-25 "

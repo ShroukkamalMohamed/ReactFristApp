@@ -11,6 +11,7 @@ export default function App() {
   const routers = createHashRouter([{
     path: '/', element: <Layout />,
     children: [
+      {path:'/' ,element:<Home/>},
       { path: 'home', element: <Home /> },
       { path: 'about', element: <About /> },
       { path: 'portfolio', element: <Portfolio /> },

@@ -1,10 +1,15 @@
 import React from "react";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About";
+  }, []);
+
   return (
     <>
       <div className="mainbg-background main text-center ">
-        <div className="container mt-5">
+        <div className="container ">
           <div className="aboutHead">
             <h1>ABOUT COMPONENT</h1>
           </div>

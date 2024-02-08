@@ -1,6 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact";
+  }, []);
+
   return (
     <>
       <div className="main Contact container text-center">
@@ -12,7 +17,7 @@ export default function Contact() {
           <i className=" star fa-solid fa-star"></i>
           <div className="afterstar"></div>
         </div>
-      <div className="form W-25 m-auto">
+      <div className="form   m-auto">
         <form >
           <div data-mdb-input-init class="form-outline mb-4">
             <input
@@ -65,7 +70,7 @@ export default function Contact() {
             type="submit"
             class=" submit btn  btn-block w-25 "
           >
-            Sign in
+            Send Message
           </button>
         </form>
         </div>
